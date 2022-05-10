@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./css/reset.css"> 
+        <link rel="stylesheet" href="./css/style.css">
+    
+        
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="header-logo"Z>
+                <img src="./img/logo.png" alt="logo Alura" class="logo">
+            </div>
+        </header>
+        <main >
+            <div class="content">
+                <section class="left-main">
+                    <div class="element_left">
+                        <textarea name="mensaje" id="texto-ingresado" class="mensaje" placeholder="Ingrese aquí su mensaje"></textarea>
+                        <p class="p">&#128712 Sólo letras sin acentos ni carcteres especiales</p>
+                                     <div class="botones_contenedor">
+                                                <button id="btnEnc" class="botones">Encriptar</button>
+                                                <button id="btnDes" class="botones">Desencriptar</button>
+                                       </div>
+                    </div>
+                </section>
+                <section class="panelDer">
+                    <img src="./img/Muneco.png" alt="img_find" id="muneco" class="muneco">
+                    <div class="elementos2">
+                        <label id="etiqueta" class="etiqueta">Ningún texto fue encontrado</label>
+                        <textarea name="mostrar" id="mostrar" class="mostrar" placeholder="" readonly></textarea>
+                        <button id="btnCopiar" class="botones">Copiar</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_style">
+                <p>&copy Alex Velasquez</p>
+            </div>
+            <script src="./script/script.js"></script>  
+        </footer>
+    </body>
+    
+</html>

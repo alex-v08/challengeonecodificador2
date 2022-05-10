@@ -1,0 +1,194 @@
+body{
+
+display: flex;
+flex-direction: column;
+background: #F3F5FC;
+justify-content: center;
+font-family: 'Source Code Pro', monospace;
+
+}
+
+.header-logo{
+margin-left: 5%;
+margin-top: 5%;
+margin-right: 5%;
+}
+
+.content{
+    position: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+main {
+    display: flex;
+    
+    padding: 3rem 10rem 1rem 10rem;
+    height: 55vh;
+}
+
+.left-main{
+
+    width: 65%;
+    float: left;
+    
+}
+
+.element_left{
+    display: flex;
+    flex-direction: column;
+   
+    
+
+}
+.mensaje{
+    width: 470px;
+    height: 275px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #0A3871;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    background: none;
+    resize: none;
+    border: none;
+    outline: none; 
+}
+
+.p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.botones_contendor{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+}
+.botones{
+    text-align: center;
+    padding: 0.5rem 4rem;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 60px;    
+    cursor:pointer;
+    transition: 250ms all
+}
+
+.botones:hover{
+transform: scale(1.01);
+
+ transition: all 0,1s ease;
+}
+
+#btnEnc{
+    background: #0A3871;
+    color:#D8DFE8;
+    border: 1px solid #D8DFE8;
+    border-radius: 24px;
+}
+
+#btnDes{
+    background: #D8DFE8;
+    color:#0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.panelDer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border-radius: 24px;
+    background: white;
+    text-align: center;
+}
+
+.elementos2{
+    display: table-caption;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.etiqueta{
+    width: auto;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0A3871;
+}
+
+.mostrar{
+    width: 237px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 52px;
+    font-size:revert;
+    color: #0A3871;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    resize: none;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#btnCopiar{
+    display: none;
+    width: 90%;
+    background: #D8DFE8;
+    color:#0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+}
+
+.footer_style {
+    width: 940px;
+    margin-top: 30px;
+    margin-left: 250px;
+    position: absolute;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*Diseño Responsivo*/
+@media screen and (max-width:480px) {
+
+    body, .header-logo, .content, .left-main, .mensaje, .panelDer, .footer_style {
+        width: auto;
+    }
+
+    .header-logo, .content, .elementos2, .footer_style {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .content{
+        display: inline-grid;
+    }
+
+    .mensaje{
+        height: auto;
+    }
+
+    .botones_contendor, #btnCopiar{
+        width: 40%;
+        flex-direction: column;
+    }
+
+    .footer_style {
+        padding-bottom: 10%;
+        padding-left: 15%;
+    }
+}
