@@ -26,8 +26,8 @@ main {
     
     padding: 3rem 10rem 1rem 10rem;
     height: 55vh;
+    flex-direction: column;
 }
-
 .left-main{
 
     width: 65%;
